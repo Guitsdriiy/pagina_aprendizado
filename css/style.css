@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu-container {
+}
+.empurra {
+  width: 1000px;
+  height: 1px;
+  float: left;
+}
+.calcas {
+  float: left;
+  background-color: red;
+}
+.camisas {
+  background-color: blue;
+  float: left;
+}
+.blusas {
+  float: left;
+  background-color: pink;
+}
+.vestidos {
+  background-color: green;
+  float: left;
+}
+.empurralado {
+  float: right;
+}
