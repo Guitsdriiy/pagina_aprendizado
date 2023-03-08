@@ -1,30 +1,108 @@
 * {
   margin: 0;
+  padding: 0;
+}
+body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background-color: #8cefae;
 }
-.menu-container {
+/* ----- menu start ----- */
+.central-menu {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  display: flex;
 }
-.empurra {
-  width: 1000px;
+.menu-row {
+  width: 50%;
+  height: 40px;
+  float: left;
+  display: flex;
+}
+
+.log {
+  justify-items: center;
+  align-items: center;
+  font-size: 15px;
+  display: flex;
+  width: 20%;
+  height: 40px;
+  float: left;
+  color: white;
+}
+.arrasta_dois {
+  display: flex;
+  height: 40px;
+  width: 30%;
+}
+.menu {
+  justify-items: center;
+  align-items: center;
+  font-size: 15px;
+  list-style: none;
+  margin-top: 7px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.menu li {
+  position: relative;
+  float: left;
+  height: 37px;
+  display: flex;
+}
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+.menu li a:hover {
+  background: #333;
+  color: #8cefae;
+  -moz-box-shadow: 0 3px 2px 0 #8cefae;
+  text-shadow: 0px 0px 5px #8cefae;
+}
+.menu li ul {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background-color: #333;
+  display: none;
+}
+.menu li:hover ul {
+  display: block;
+}
+.menu li ul li {
+  border: 1px solid #c0c0c0;
+  display: block;
+  width: 150px;
+}
+
+.icon {
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 25px;
+}
+#divBusca {
+  height: 30px;
+  margin-top: -10px;
+  border: solid 2px #ffffff;
+  border-radius: 15px;
+  width: 200px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 20px;
+  border: none;
   height: 1px;
-  float: left;
+  width: 260px;
 }
-.calcas {
-  float: left;
-  background-color: red;
-}
-.camisas {
-  background-color: blue;
-  float: left;
-}
-.blusas {
-  float: left;
-  background-color: pink;
-}
-.vestidos {
-  background-color: green;
-  float: left;
-}
-.empurralado {
-  float: right;
-}
+/* ----- menu end ----- */
