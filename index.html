@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/js/javascript.js" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,61 +14,40 @@
 
     <!-- ===== titulo end ===== -->
     <!-- ===== Menu start ===== -->
-    <div class="central-menu">
-      <div class="log"><h3 class="logo">Brechó Leopoldina</h3></div>
-      <div class="menu-row">
-        <nav>
-          <ul class="menu">
-            <li>
-              <a href="#">Lançamentos</a>
-              <ul>
-                <li><a href="#">Calças</a></li>
-                <li><a href="#">Blusas e Camisas</a></li>
-                <li><a href="#">Vestidos</a></li>
-                <li><a href="#">Infantis</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Feminino</a>
-              <ul>
-                <li><a href="#">Calças</a></li>
-                <li><a href="#">Blusas e Camisas</a></li>
-                <li><a href="#">Vestidos</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Masculino</a>
-              <ul>
-                <li><a href="#">Calças</a></li>
-                <li><a href="#">Blusas e Camisas</a></li>
-                <li><a href="#">Vestidos</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Infantil</a>
-              <ul>
-                <li><a href="#">Calças</a></li>
-                <li><a href="#">Blusas e Camisas</a></li>
-                <li><a href="#">Vestidos</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="arrasta_dois">
-        <!-- <div class="divBusca"> -->
-        <ion-icon class="icon" name="search-sharp"></ion-icon
-        ><input
-          class="divBusca"
-          type="text"
-          name="mensagem"
-          id="txtBusca"
-          maxlength="15"
-        />
-        <!-- </div> -->
-      </div>
-    </div>
 
+    <nav class="navbar">
+      <a href="#" class="logo">LOGO</a>
+      <input type="checkbox" id="toggler" />
+      <label class="list-icon" for="toggler"
+        ><ion-icon name="menu-outline"></ion-icon
+      ></label>
+      <div class="menu">
+        <ul class="list">
+          <li><a href="#">Lançamentos</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Infantil</a></li>
+        </ul>
+      </div>
+      <!-- ===== pesquisa star ====-->
+
+      <div class="search-box">
+        <input
+          type="text"
+          class="search-text-pesq"
+          placeholder="Pesquisar..."
+        />
+        <a class="search-btn">
+          <img class="loup-verd" src="./Imagens/icons/logo_verde.png" alt="" />
+          <img
+            class="loup-branco"
+            src="./Imagens/icons/ic_baseline-search (1).png"
+            alt=""
+          />
+        </a>
+      </div>
+      <!-- ===== pesquisa end ====-->
+    </nav>
     <!-- ===== Menu end ===== -->
     <!-- ===== fotos start ===== -->
 
@@ -75,12 +55,4 @@
 
     <!-- ===== Main Container End ===== -->
   </body>
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
 </html>
