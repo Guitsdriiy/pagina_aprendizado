@@ -78,7 +78,9 @@ body {
   align-items: center;
 }
 .search-text-pesq {
+  transition: 0.4s;
   background: none;
+  padding: 0;
   border: 0;
   outline: 0;
   font-size: 15px;
@@ -86,7 +88,9 @@ body {
 }
 .search-btn {
   width: 50px;
+  cursor: pointer;
   height: 50px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,4 +106,28 @@ body {
   width: 35px;
   height: 35px;
 }
+.search-box:hover > .search-text-pesq {
+  width: 250px;
+padding-left: 20px;
+}
+.search-box:hover > .search-btn{
+  background: #8cefae;
+}
+.search-box:hover > .search-btn .loup-verd{
+  display: none ;
+}
+.search-box:hover > .search-btn .loup-branco{
+  display: block ;
+}
+@media screen and (max-width: 600px) {
+  .search-box{
+    background-color: white;
+    height: 50%;
+    padding: 5px;
+    border-radius: 40px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+  }
 /* ----- pesquisa end ----- */
